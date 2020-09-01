@@ -1,5 +1,43 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  include navbar
+  section.index
+    #particles-js.particles
+    .container
+      .row.index_container
+        .col-md-6.col-sm-12.header_column
+          .header_title
+            h1
+              span.blast.ml-2
+                |Hi
+              span.blast.ml-2
+                |I'm 
+              br  
+              span.blast.ml-2
+                |Abdumannon   
+            h2
+              span.plump.ml-2
+                |Welcome
+              span.plump.ml-2
+                |to 
+              span.plump.ml-2
+                |my   
+              span.plump.ml-2
+                |WORLD!!!   
+            .typed.d-flex.pl-3       
+              h2#typed  
+            a.btn.btn-rounded.btn-outline-success(href="#!")  
+              i.fal.fa-envelope.mr-1  
+              | Contact me
+            a.btn.btn-rounded.btn-outline-info(href="#!")  
+              i.fal.fa-user.mr-1  
+              | About me 
+        .col-md-6.col-sm-12.header_column
+          .header_img
+            img(src="./images/logoHeader.png")
+
+
+
+      
+
