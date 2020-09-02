@@ -1,0 +1,408 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: 'Bernadette';
+    src: url("../fonts/bernadette.ttf");
+}
+@font-face{
+    font-family:'OCR A Extended';
+    src:url('../fonts/ocraextended.ttf')
+    }
+    @font-face {
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 900;
+        src: url("../fonts/MyriadPro-BlackCond.otf");
+    }
+h1,h2 , h3,h4 {
+    font-family: 'Bernadette';
+}
+span {
+    font-family: 'Myriad Pro';
+}
+input.form-control:focus~label {
+    top: -30%;
+    transform: scale(0.8);
+    color: blue;
+}
+
+textarea.form-control:focus~label {
+    top: -10%;
+    transform: scale(0.8);
+    color: blue;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+   
+}
+.header_404 h1 img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+/*================== homePage1 ================== */
+header.homePage1{
+    padding:70px 0;
+    background:url('../imgIndex/header-bg.jpg') no-repeat center center /cover;
+    height:100vh;
+}
+header.homePage1.blog_post{
+    padding:70px 0;
+    background:url('../imeges3/img (42).jpg') no-repeat center center /cover;
+    height:100vh;
+}
+header.homePage1 .homePage1_title {
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+.homePage1_today{
+    position: relative;
+}
+.homePage1_today .relative.owl-carousel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+header.homePage1 .homePage1_title h1{
+font-size:56px;
+color:#fff;
+}
+header.homePage1 .homePage1_title h1 span{
+font-size:40px;
+color:#fea100;
+}
+section.homePage1_today{
+    background:url('../img-4/home2-slider2.jpg') no-repeat center center ;
+    background-attachment:fixed;
+    min-height:400px;
+}
+section.foodName{
+    margin-top:-10%;
+}
+section.menu_list .md-form h3 {
+    font-size: 16px;
+}
+
+section.menu_list .md-form p {
+    font-size: 14px;
+    color: #5c6369;
+}
+section.menu_list .md-form span {
+    color: #00C9FF;
+}
+.testimonials h3{font-weight:800}
+.testimonials{background:url('../imeges 2/testimonialsbg.png') no-repeat center center;-webkit-background-size:cover;background-size:cover;color:#fff;padding-top:130px;padding-bottom:100px}
+.testimonials h3.line{color:#eeb501;margin-bottom:20px}
+.testimonials .container .carousel-control-prev .carousel-control-prev-icon{background:url('../imeges 2/previmg.png') center center no-repeat;-webkit-background-size:contain;background-size:contain;position:absolute;top:0;left:-10%;width:60px;height:60px}
+.testimonials .container .carousel-control-next{text-align:center}.testimonials .container .carousel-control-next .carousel-control-next-icon{background:url('../imeges 2/nextimg.png') center center no-repeat;-webkit-background-size:contain;background-size:contain;position:absolute;top:10%;right:-10%;width:60px;height:60px;z-index:1008}.testimonials .container .carousel-control-next .finger{position:absolute;top:30%;right:-2%;font-size:30px;z-index:1009}.testimonials .container .quotebox h4{width:80%;font-size:25px;margin:auto}.testimonials .container .quotebox img{margin-top:15px;width:100px;height:100px;display:inline-block;-webkit-border-radius:50%;border-radius:50%}.testimonials .container .quotebox h3{font-size:29px;color:#eeb501}.clients{padding-top:95px}
+/*================== homePage1 ================== */
+/* ===========blog post html ===========*/
+header.blog_post{
+    padding:90px 0;
+    
+}
+header.blog_table .header_blog_title h1{
+    font-size:50px  !important;
+}
+section.visa {
+    background: #fff;
+
+    padding-top: 100px;
+
+}
+
+section.visa iframe {
+    max-width: 100%;
+
+}
+
+section.visa input {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+section.visa input.check {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    position: relative;
+}
+
+section.visa select {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+section.visa select:focus {
+    outline: none;
+}
+
+section.visa a.zip {
+    border-bottom: 1px solid grey;
+}
+header.blog{
+    background: url('../imeges/header bg.jpg') no-repeat ;  
+    background-size:cover;
+}
+/* ===========blog post html=========== */
+/* enent Two html */
+header.eventTwo{
+    background:url('../imeges/81603005_216672532688756_1543845954112309274_n.jpg') no-repeat center center /cover;
+}
+header.eventTwo h1{
+    font-size:56px;
+    color:#ffc400 ;
+}
+/* enent Two html */
+nav.navbar1 {
+    z-index: 1050;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header.i404{
+    padding:90px 0;
+}
+.post .md-form h3{
+    font-size:18px;
+}
+.navbar {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    font-weight: 300;
+}
+footer {
+    width: 100%;
+    height: auto;
+    background: #373844;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+footer p {
+    color: #adb2b7;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer ul li a {
+    color: #adb2b7 !important;
+}
+
+footer input {
+    border: 2px solid #ff9933;
+    background: transparent;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 8px;
+
+}
+
+footer input:focus {
+    border: none;
+    box-shadow: 0 0 8px #33e0ff;
+}
+
+footer .icons_gallery {
+    display: flex;
+    padding-top: 30px;
+}
+
+footer .gallery_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: blue;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: 1s;
+    font-size: 22px;
+}
+
+footer .gallery_icon:hover {
+    color: #803119;
+    box-shadow: 0 0 10px #ff9933;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+
+}
+
+footer .apple_icon {
+    width: 30px;
+    height: 30px;
+}
+
+footer .apple_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .apple,
+.play_market {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 65px;
+    background: #52535e;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+footer .apple:hover,
+.play_market:hover {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+
+}
+
+footer .apple_title p {
+    font-size: 18px;
+    color: #edf1f3;
+}
+
+footer .apple_title h5 {
+    font-size: 11px;
+    color: #edf1f3;
+    margin-bottom: 0;
+}
+
+footer .apple:hover p,
+.play_market:hover p {
+    color: #803119;
+}
+
+footer .apple:hover h5,
+.play_market:hover h5 {
+    color: #803119;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.footer_bottom p {
+    margin-bottom: 0;
+
+}
+
+.footer_bottom::after {
+    content: '';
+    display: block;
+    background: #7d8587;
+    width: 35%;
+    height: 1px;
+
+}
+
+.footer_bottom::before {
+    content: '';
+    display: block;
+    background: #7d8587;
+    width: 35%;
+    height: 1px;
+}
+@media(max-width:991px){
+    section.homePage1_about .homeImg.price{
+        padding-top:15px;
+    }
+    section.menu_list .price{
+       display:none;
+    }
+    
+
+section.visa iframe {
+    width:100%;
+}
+footer  .footer_app{
+   margin:auto;
+   text-align:center;
+}
+footer .footer_app  .footer_app_market{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
+.mt-lg-4{
+    padding-top:15px;
+}
+}
+@media(max-width:767px){
+section.foodName .card.card-cascade.wrapper{
+    display:none;
+}
+section.homePage1_about .priceNone{
+    display:none;
+ }
+}
+@media(max-width:575px){
+    .ml-md-0{
+        margin-left:0px !important;
+    }
+footer{
+    text-align:center;
+}
+footer .icons_gallery{
+   display :flex;
+   justify-content:space-around;
+}
+footer .footer_app{
+    margin-top:15px;
+}
+}
+@media(max-width:320px){
+footer{
+    text-align:center;
+}
+.testimonials .container .quotebox h4 {
+    width: 100%;
+    font-size: 15px;
+    margin: auto;
+}
+.testimonials .carousel-control-prev,.carousel-control-next{
+    display:none;
+}
+footer .footer_app  .footer_app_market{
+    justify-content: center; 
+}
+section.menu_list .card{
+   padding-left:5px !important;
+   padding-right:5px !important;
+ }
+ header.homePage1 .homePage1_title h1 {
+    font-size: 28px;
+
+}
+ header.homePage1 .homePage1_title h1 span {
+    font-size: 18px;
+    color: #fea100;
+}
+section.homePage1_about .homePage1_text{
+    text-align:center;
+}
+header.blog_table .header_blog_title h1{
+    font-size:50px  !important;
+}
+}

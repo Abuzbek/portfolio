@@ -1,0 +1,947 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.7s !important;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+h1,h2,h3{
+    text-transform: uppercase;
+}
+body{
+    background-color: #1d1d1d;
+}
+section{
+    padding: 70px 0;
+}
+header .header_top h5{
+    font-size: 14px;
+} 
+header .header_top p{
+    font-size: 13px;
+} 
+header .header_top h4 {
+    font-size: 18px;
+    margin: 0;
+} 
+header{
+    position: relative;
+    height: 700px;
+}
+ header .owl-carousel {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  header  .owl-slide {
+      height:100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  header  .owl-slide img{
+    height: 100%;
+    width:100%;
+  }
+  header .header_title{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* background-color: rgba(0, 0, 0, 0.604); */
+
+  }
+  header .header_title .h1{
+   padding:10px;
+   transform: skew(-20deg);
+   background-color: #1d1d1d;
+color:white;
+margin: 0;
+  }
+  header .header_title .h2{
+    padding:10px;
+    transform: skew(-20deg);
+    background-color: white;
+ color:#1d1d1d;
+   }
+  header .header_title .h1 h1{
+    transform: skew(20deg);
+margin: 0;
+   }
+   header .header_title .h2 h1{
+    transform: skew(20deg);
+margin: 0;
+   }
+   header .header_title p{
+    color:white;
+    margin: 10px 0 20px 0;
+   }
+   section.intruduse{
+       margin-top: 150px;
+       padding:70px 0;
+       padding-bottom: 0;
+   background-color: #fff;
+
+   }
+   section.intruduse .intruduse_img img{
+    height: 100%;
+    width:100%;
+    object-fit:cover;
+   }
+   section.intruduse .card{
+   background-color: transparent;
+    box-shadow:none;
+    border:none;
+   }
+   section.intruduse span{
+    color:#ef5050;
+    }
+    section.intruduse .card_icon{
+        padding: 1.25rem;
+    }
+    section.intruduse .card_icon .icon{
+        border: 1px solid rgba(0, 0, 0, 0.404);
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ef5050;
+        font-size: 28px;
+        transition: .5s all;
+    }
+    section.intruduse .card_icon .icon:hover{
+    
+        color: #fff;
+        font-size: 28px;
+        background-color: #ef5050;
+    }
+    section.intruduse a{
+        font-size: 13px;
+        color:#333333;
+
+    }
+    section.intruduse a:hover{
+        font-size: 13px;
+        color:#ef5050;
+        
+    }
+    section.intruduse p{
+        font-size: 14px;
+        color:#8b8b8b;
+        
+    }
+    section.intruduse h3 {
+        color:#333333;
+        font-weight: 600;
+        font-size:30px;
+    }
+    section.intruduse h4 {
+        color:#333333;
+        font-weight: 600;
+        font-size:18px;
+    }
+    section.service{
+        padding: 70px 0;
+    }
+    section.service .service_img img{
+       width:100%;
+       height:100%;
+       object-fit:cover;
+    }
+    section.service .service_img {
+        position: relative;
+        overflow: hidden;
+        /* border: 65px solid black;
+        border-top: 65px solid transparent;
+        border-left: 65px solid transparent;
+        border-right: 65px solid transparent; */
+        text-align:center;
+
+    }
+    section.service .service_img  .service_bottom {
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        border: 65px solid black;
+        border-top: 65px solid transparent;
+        border-left: 65px solid transparent;
+        border-right: 65px solid transparent;
+        z-index:1;
+    }
+    .service_img a.price{
+        position: absolute;
+        bottom:25px;
+        z-index:3;
+        color:white;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    section.service .service_img  .service_hover {
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid #8b8b8b;
+        z-index:1;
+        background-color: #ef5050;
+        color:white;
+        padding-left:10px ;
+        padding-right:10px ;
+        opacity: 0;
+        transform: scale(10);
+    }
+    section.service .service_img  .service_hover h4{
+        color:white;
+    }
+    section.service .service_img  .service_hover p{
+        color:white;
+    }
+    section.service .service_img:hover  .service_hover {
+        opacity: 1;
+        transform: scale(1);
+    }
+    section.service .service_img:hover a.price{
+        opacity: 0;
+    }
+    section.service .service_img:hover .service_bottom {
+        transform: translateY(100%);
+    }
+    .owlItem img{
+        height:350px;
+        object-fit:cover;
+    }
+    section.slider{
+        padding:70px 0;
+    }
+    section.slider .top_title{
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    section.slider .top_title h2{
+        color:white;
+        
+    }
+    section.slider .top_title p{
+        color:white;
+    }
+    .owl-carousel .owl-prev ,.owl-carousel .owl-next{
+       position: absolute;
+       top:-70px;
+       left:50%;
+       transform: translateX(-50%);
+padding:10px; 
+border: 1px solid white;
+    }
+    .owl-carousel .owl-prev:hover ,.owl-carousel .owl-next:hover{
+ border: 0px solid white;
+ background-color: #ef5050;
+     }
+.client{
+    padding:70px 0;
+}
+.owl_item img{
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+}
+section.client  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+ 
+section.client .swiper-slide {
+    border-radius: 50% !important;
+    width: 33%;
+    height: 300px;
+    transform:scale(.7) rotateY(0deg) !important;
+    opacity: 0.3;
+  }
+section.client .swiper-slide img{
+    border-radius: 50% !important;
+width: 100%;
+height: 100%;
+object-fit: cover;
+  }
+  .slide_text{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    margin-top:20px;
+}
+.slide_text .textures{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.slide_text .textures.active{
+    opacity: 1;
+}
+.slide_text h3,.slide_text p{
+color:white;
+}
+section.client_about .slide_text h3,.slide_text p{
+    color:black;
+    }
+section.client .swiper-slide.swiper-slide-active {
+    transform:scale(1) !important;
+    opacity: 1;
+
+  }
+  section.attechment{
+      background: url('../../imeges3/contact1.jpg') no-repeat center center;
+      background-attachment: fixed;
+      color:white;
+  }
+  section.attechment span{
+    font-size: 48px;
+
+}
+section.form{
+    background: url('../img/map2.jpg') no-repeat center center / cover;
+
+}
+textarea.form-control{
+ min-height:200px;
+ max-height:200px;
+    border: none !important;
+    border-bottom:1px solid white !important;
+}
+section.logoz{
+    background-color: #ef5050;
+}
+footer{
+    padding: 70px 0;
+    color: white;
+}
+footer p ,footer a {
+    font-size: 13px;
+}
+footer p  {
+    color: white;
+
+}
+footer a {
+    color: #ef5050;
+
+}
+footer .card{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+footer .card-body{
+   padding: 0;
+   margin-left: 10px;
+}
+footer .card-body p{
+   font-size: 13px;
+   color: white;
+ }
+ .footer_brand{
+     display:block;
+     margin-bottom: 15px;
+ }
+ footer ul li a{
+   color: white;
+
+ }
+
+
+/* ===================INDEX2 HTML================= */
+section.map{
+    background: url('../img/map.jpg') no-repeat  center center /cover;
+    background-attachment: fixed;
+}
+section.form2 .translate{
+    transform:translateY(-50%);
+}
+section.form2{
+    background: url('../img/bg.svg')no-repeat  center center  #fff;
+    background-size: cover;
+    padding: 0;
+}
+/* ===================INDEX2 HTML================= */
+/* ===================INDEX3 HTML================= */
+section.intruduse .intruduse_img{
+    position:relative;
+}
+section.intruduse .intruduse_img video{
+    max-width:100%;
+    height:auto;
+}
+section.intruduse .intruduse_img .btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+
+}
+section.cliant .owl_child a{
+   color:red;
+}
+section.cliant .owl-dots{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ }
+ section.cliant .owl-dots .owl-dot{
+    width: 9px;
+    height:9px;
+    background:transparent;
+    border-radius: 50%;
+    margin:5px;
+    border:2px solid red;
+
+ }
+ section.cliant .owl-dots .owl-dot.active{
+    width: 7px;
+    height:7px;
+    background:#eee;
+    border-radius: 50%;
+    margin:5px;
+    border:none;
+  }
+  section.plan .card-header,  section.plan .card-header_next{
+    background:#ef5050;
+
+  }
+  section.plan .card-header{
+    border-bottom:2px solid #fff;
+
+
+  }
+  section.plan .card-header_next{
+      padding:15px 0;
+
+
+  }
+  section.plan .card-body{
+    padding:35px 1.5rem;
+
+
+}
+section.plan{
+    background: url('../img/bg.svg') no-repeat center center /cover;
+}
+  section.plan .card-header_next span{
+      font-size:60px;
+      font-weight:700;
+}
+section.plan .card-header_next a{
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+}
+section.plan .card-body li a{
+    color:#333;
+    font-size:16px;
+}
+/* ===================INDEX3 HTML================= */
+
+/* =============ABOUT HTML========= */
+
+header.about .header_title{
+    
+    background:url('../img/3.jpg') no-repeat center center /cover;
+}
+
+
+header.about .header_title h1{
+    border-top:2px solid white ;
+    border-bottom:2px solid white ;
+}
+
+
+/* =============ABOUT HTML========= */
+
+/* =============blog HTML========= */
+section.blog ul li {
+    display:inline-block;
+    width:100%;
+    margin-bottom:14px;
+}
+section.blog ul li a{
+    padding-left:20px;
+    line-height:30px;
+    position: relative;
+    color:#777;
+    font-size:14px;
+     
+}
+section.blog ul li a:hover{
+    color:#e6ae48;
+    padding-left:25px;
+     
+}
+section.blog ul li a:hover span{
+    background-color:#e6ae48;
+     color:#fff;
+}
+section.blog ul li a span{
+    width:30px ;
+    height:30px;
+    border-radius:50%;
+    background-color: #f5f5f5;
+    font-size:10px;
+    line-height: 30px;
+    text-align:center;
+
+}
+section.blog .accordion .card-header a{
+    padding-left:20px;
+    line-height:30px;
+    position: relative;
+    color:#777;
+    font-size:14px;
+}
+section.blog .accordion .card-header a span{
+    width:30px ;
+    height:30px;
+    border-radius:50%;
+    background-color: #f5f5f5;
+    font-size:10px;
+    line-height: 30px;
+    text-align:center;
+}
+section.blog .accordion .card-header a::before{
+    content: "\f054";
+font-family: "Font Awesome 5 Pro";
+position:absolute;
+left:0;
+top:-5px;
+}
+section.blog .accordion .card-header a:hover{
+    color:#e6ae48;
+    padding-left:25px;
+     
+}
+section.blog .accordion .card-header a:hover span{
+    background-color:#e6ae48;
+     color:#fff;
+}
+section.blog .accordion .card-header a:hover::before{
+    color:#e6ae48;
+}
+/* section.blog .widget {
+    display: inline-block;
+    margin-bottom: 38px;
+    width: 100%;
+    text-align: left;
+}
+section.blog .widget-tag > a {
+    font-size: 12px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    margin-right: 3px;
+    display: inline-block;
+    color: #969595;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #dadada;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+section.blog .widget-tag > a:hover {
+    background-color: #e7b14f;
+    color: #fff;
+    border-color: #e7b14f;
+}
+section.blog .widget-title {
+    color: #333;
+    font-family: 'montserratsemi_bold';
+    font-size: 18px;
+    letter-spacing: 1.26px;
+    line-height: 19.98px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 22px;
+}
+section.blog .widget-latestposts .latest-content {
+    border-bottom: 1px solid #e1e1e1;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+    padding-left: 70px;
+    padding-right: 0;
+    min-height: 72px;
+}
+section.blog .widget-latestposts .latest-content > a {
+    left: 0;
+    position: absolute;
+}
+section.blog .widget-latestposts .latest-content h3 {
+    margin: 0;
+    display: inline-block;
+    font-size: 13px;
+    width: 100%;
+    letter-spacing: 0.52px;
+    text-transform: unset;
+}
+section.blog .widget-latestposts .latest-content h3 a {
+    color: #333;
+    text-decoration: none;
+    line-height: 20px;
+}
+section.blog .widget-latestposts .latest-content h3 a:hover {
+    color: #e6ae48;
+}
+section.blog  .widget-latestposts .latest-content p {
+    font-size: 11px;
+    color: #777;
+    line-height: 20px;
+    display: block;
+    letter-spacing: 0.77px;
+    display: inline-block;
+    width: 100%;
+}
+section.blog .widget-latestposts .latest-content img:hover {
+    opacity: 0.5;
+} */
+
+
+
+/* =============blog HTML========= */
+ /* book html */
+/* SOURCE: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+
+input[type='range'] {
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	width: 100%; /* Specific width is required for Firefox. */
+	background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type='range']:focus {
+	outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type='range']::-ms-track {
+	width: 100%;
+	cursor: pointer;
+
+	/* Hides the slider so custom styles can be added */
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+    border: 10px solid #e0e0e0;
+	height: 36px;
+	width: 36px;
+	cursor: pointer;
+	margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; Add cool effects to your sliders! */
+    border-radius:50%;
+}
+
+/* All the same stuff for Firefox */
+input[type='range']::-moz-range-thumb {
+	/* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+	border: 10px solid #e0e0e0;
+	height: 36px;
+	width: 36px;
+    cursor: pointer;
+    border-radius:50%;
+}
+
+/* All the same stuff for IE */
+input[type='range']::-ms-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #ef5050;
+	border-radius: 1.3px;
+    border: 0.2px solid #010101;
+    
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+	background: #ef5050;
+}
+
+input[type='range']::-moz-range-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #ef5050;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+}
+
+input[type='range']::-ms-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	border-width: 16px 0;
+	color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+	background: #ef5050;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type='range']:focus::-ms-fill-lower {
+	background: #ef5050;
+}
+input[type='range']::-ms-fill-upper {
+	background: #ef5050;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type='range']:focus::-ms-fill-upper {
+	background: #ef5050;
+}
+.vehicle_top .btn span{
+    font-size:24px ;
+    color:white;
+    font-weight:700;
+    /* line-height: 0; */
+
+}
+.vehicle_top .btn {
+    padding:18px 20px;
+    /* line-height: 0; */
+    /* align-items: stretch; */
+    color: black;
+}
+.vehicle_top .btn-blue-grey{
+    color: black !important; 
+    font-size:24px ;
+    font-weight:700;
+}
+section.info textarea.form-control{
+    min-height:265px ;
+    border: 1px solid #ced4da !important;
+}
+/* =========book html========= */
+/* ======warranty html   ========= */
+.waran_Text h3{
+    font-size:24px;
+    font-weight:700;
+
+}
+.waran_Text h5{
+    font-size:15px;
+    font-weight:700;
+
+}
+.waran_Text p{
+    font-size:14px;
+    /* font-weight:700; */
+    color:#8b8b8b;
+}
+.waran_Text ul li a{
+    font-size:14px;
+    /* font-weight:700; */
+    color:black;
+margin-bottom:0px;
+
+}
+.waran_Text ul li {
+margin-bottom:13px;
+}
+/* ======warranty html   ========= */
+
+/* ============CONTACT HTML============== */
+.contact_text .fad{
+    color:#cf5050;
+}
+.contact_text p{
+    color:#8b8b8b;
+    font-size:14px;
+}
+.contact_text h5{
+    color:#000;
+    text-transform:uppercase;
+    font-size:15px;
+}
+.contact_text h3{
+    color:#000;
+    text-transform:uppercase;
+    font-size:24px;
+    /* transform: translate() scale(); */
+}
+/* ============CONTACT HTML============== */
+
+/* =========media screen========= */
+
+
+ @media(max-width:991px){
+     /* ===================INDEX2 HTML================= */
+    section.form2 .translate{
+        transform:translateY(0%);
+
+
+    }
+    /* ===================INDEX2 HTML================= */
+     body{
+         text-align:center;
+     }
+     .nav-link.waves-effect.waves-light.d-flex.align-items-center{
+        justify-content: center;
+
+
+     }
+     .navbar .nav-flex-icons{
+        justify-content: center;
+     }
+     section.client .swiper-slide{
+         width: 40%;
+     }
+     .card.text-left{
+        text-align:center !important;
+        
+     }
+     .card.align-items-start{
+        align-items:center !important;
+        
+     }
+     .form-inline{
+         justify-content: center;
+     }
+ }
+ @media(max-width:767px){
+    body{
+        text-align:center;
+    }
+    section.client .swiper-slide{
+        width: 45%;
+        height:230px;
+    }
+    header{
+        position: relative;
+        height: 400px;
+    }
+    section.intruduse {
+        margin-top: 150px;
+        padding: 70px 0;
+        padding-bottom: 0;
+        background-color: #fff;
+    }
+    .flex-row{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    section.attechment .row.justify-content-between{
+        justify-content: center !important;
+
+    }
+    footer    .flex-row{
+        flex-direction: row !important;
+        align-items: center !important;
+    }
+}
+@media(max-width:575px){
+    header.about .header_title h1 {
+        font-size: 40px;
+    }
+    body{
+        text-align:center;
+    }
+    section.client .swiper-slide{
+        width: 70%;
+        height:300px;
+    }
+
+header .header_title .h1 h1{
+font-size: 20px;
+   }
+   header .header_title .h2 h1{
+font-size: 20px;
+   }
+   section.intruduse{
+    /* margin-top: 400px; */
+    padding: 70px 0;
+    padding-bottom: 0;
+    background-color: #fff;
+}
+/* header  .owl-slide {
+    height:100%;
+  }
+ header .owl-stage-outer{
+      height:100%;
+  }
+ header .owl-stage{
+    height:100%; 
+  }
+ header .owl-item{
+    height:100%;   
+  } */
+}
+@media(max-width:320px){
+    body{
+        text-align:center;
+    }
+    section.client .swiper-slide{
+        width: 90%;
+        height:320px;}
+ 
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}

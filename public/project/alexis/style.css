@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.circle_par{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.circle_par::after{
+   content: '';
+   display: block;
+   width: 100px;
+   height: 2px;
+   background-color: #616161;
+}
+.circle_par::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #616161;
+ }
+ .circle_par .circle{
+     width: 7px;
+     height: 7px;
+     background-color: #fc5f45;
+     border-radius: 50%;
+     margin: 7px;
+ }
+h1,
+h2,
+h3 {
+    text-transform: capitalize;
+    font-family: 'Poppins';
+}
+
+header {
+    background: url('./img/header_bg.jpg') no-repeat center center / cover;
+    text-align: center;
+    padding: 70px 0;
+}
+
+header .header_title {
+    padding: 170px 0px 100px 0;
+}
+
+header .header_title h1 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+section {
+    position: relative;
+    padding: 100px 0 70px 0;
+}
+
+section.about .bg_about {
+    padding: 75px 15px;
+    background: url('./img/aboutbgjpg.jpg') no-repeat left center;
+    background-size: contain;
+}
+
+section.about {
+    position: unset;
+}
+
+section.about .bg_about .card {
+    padding: 100px 85px 100px 85px;
+    position: relative !important;
+}
+
+section.about .bg_about .card samp {
+    position: absolute;
+    font-size: 250px;
+    color: #e0e0e0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    font-weight: 800;
+    line-height: 200px;
+    font-family: 'Poppins';
+
+}
+
+section.about .bg_about .card h2,
+section.about .bg_about .card p {
+    z-index: 1;
+
+}
+
+section.about .bg_about .card h2 {
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+
+}
+
+section.about .bg_about .card p {
+    font-size: 15px;
+    /* margin-bottom: 50px; */
+    font-weight: 400;
+    color: #616161;
+
+}
+
+section.about .bg_about .card .line {
+    height: 2px;
+    background: url('./img/line.png');
+    /* margin-top: 100px; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+section.focus {
+    padding-top: 100px;
+    position: relative;
+}
+
+section span {
+    position: absolute;
+    font-size: 250px;
+    color: #e0e0e0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    font-weight: 800;
+    line-height: 200px;
+}
+
+section h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 500;
+
+}
+
+section .col-12 p {
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+section.focus .card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+section.focus .card p {
+    font-size: 15px;
+    /* margin-bottom: 50px; */
+    font-weight: 400;
+    color: #616161;
+}
+
+section.focus .card .icon {
+    padding-bottom: 35px;
+}
+
+section.focus .card .card-body {
+    padding: 65px 35px;
+}
+
+section.focus .card:nth-child(1) {
+    border-bottom: 3px solid #fc5f45;
+}
+
+section.focus .card:nth-child(2) {
+    border-bottom: 3px solid #38c695;
+}
+
+section.video {
+    background: url('./img/img5.jpg') no-repeat center center /cover;
+    padding: 0;
+    color: white;
+}
+
+section.video .rgba-black-strong {
+    padding: 150px 0;
+}
+
+.pro_box {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro_box .pro_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border: 0px solid white;
+    opacity: 0;
+    transition: opacity 500ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.pro_box .pro_title .pro_name {
+    transform: translateY(1000px);
+    transition: 700ms;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.pro_box .pro_title .pro_add {
+    transform: scale(5);
+    transition: 1s;
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.pro_box .pro_title img.w-100 {
+    transform: translateX(1000px);
+    transition: 300ms;
+}
+
+.pro_box:hover .pro_title {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    /* border: 3px solid white; */
+}
+
+.pro_box:hover .pro_title .pro_add {
+    transform: scale(1);
+    /* border: 3px solid white; */
+}
+
+.pro_box:hover .pro_title .pro_name {
+    transform: translateX(0);
+    /* border: 3px solid white; */
+}
+
+.pro_box:hover .pro_title img.w-100 {
+    transform: translateX(0);
+    /* border: 3px solid white; */
+}
+
+section.team .card .card-body h3 {
+    font-size: 18px;
+}
+
+section.team .card .card-body p {
+    font-size: 13px;
+}
+
+section.team .card.comment {
+    padding: 80px 100px 0px;
+    margin-top: 60px;
+    background-color: #eee;
+
+    position: relative;
+}
+
+section.team .card.comment .after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -40px;
+    left: 70px;
+    transform: rotate(45deg);
+    background-color: #eee;
+    transition: 1s !important;
+
+}
+
+.fade {
+    animation: fade 1s linear forwards;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* section.attechment */
+section.attechment {
+    background: url('./img/attechment_bg.jpg')no-repeat center center / cover;
+    background-attachment: fixed;
+    /* margin-bottom: 1000px; */
+}
+
+section.attechment samp {
+    font-size: 21px;
+    color: white;
+    font-weight: 500;
+}
+
+section.attechment p {
+    font-size: 15px;
+    color: white;
+}
+
+section.step .card {
+    /* background-color: transparent; */
+    box-shadow: none;
+    border: none;
+    padding-left: 120px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    text-align: left;
+
+}
+
+section.step .card h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+section.buy .col-12 .card p {
+    margin-bottom: 1rem;
+}
+
+section.terminol {
+    background: url('img/teamB.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+section.terminol .card p {
+    color: #616161;
+    margin-bottom: 40px;
+}
+
+section.terminol .card small {
+    font-family: 'bernadette';
+    font-size: 40px;
+
+}
+
+section.terminol .card strong {
+    font-size: 18px;
+    font-weight: 500;
+
+
+}
+
+section.terminol .card abdumannon {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fc5f45;
+
+}
+
+.transparent {
+    background: transparent;
+}
+
+section.select .card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+section.blog .card {
+    cursor: pointer;
+}
+
+section.blog .card h3 {
+    font-size: 20px;
+}
+
+section.blog .card p {
+    font-size: 15px;
+    color: #616161;
+}
+section.subs input.form-control{
+max-width: 300px;
+height: 50px;
+border-radius: 0;
+border-bottom-left-radius: 10em;
+border-top-left-radius: 10em;
+}
+section.subs .btn{
+    max-width: 300px;
+    height: 50px;
+    border-radius: 0;
+    border-bottom-right-radius: 10em;
+    border-top-right-radius: 10em;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    footer h3{
+        font-size: 18px;
+    }
+    footer p{
+        font-size: 16px;
+    }
+    @media(max-width:991px){
+        section.about .bg_about {
+            padding: 75px 15px;
+            background: url('./img/aboutbgjpg.jpg') no-repeat center center;
+                background-size: auto;
+                background-size: cover;
+
+        }
+        section.team .card.comment .row{
+            text-align: center !important;
+            justify-content: center;
+        }
+        section.team .card.comment .social{
+            border: none !important;
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        section.team .card.comment .social .icon{
+            margin-left: 15px;
+           
+        }
+        section.step .card {
+            background: white !important;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            padding-bottom:  30px;
+            padding-right:  30px;
+            padding-top:  30px;
+        }
+        footer{
+            text-align: center;
+        }
+        footer .brand{
+            margin: auto;
+        }
+        section.portfolio .pro_box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        section.portfolio .pro_box .pro_title img{
+          max-width: 100%;
+          height: auto;
+          width: auto;
+        }
+
+    }
+    @media(max-width:767px){
+        section.team .card.comment .after {
+            display: none;
+        }
+    }
+    @media(max-width:575px){
+        section.about .bg_about .card {
+            padding: 30px 30px;
+            position: relative !important;
+        }
+        section h2 {
+            font-size: 38px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        header .header_title h1 {
+            color: white;
+            font-weight: 500;
+            margin-bottom: 40px;
+            font-size: 45px;
+        }
+        section.team .card.comment {
+            padding: 20px 20px;
+            margin-top: 60px;
+            background-color: #eee;
+            position: relative;
+        }
+        .container{
+            padding-bottom: 0px !important;
+        }
+        section.subs input.form-control {
+            max-width: 300px;
+            height: 50px;
+            border-radius: 0;
+            border-bottom-left-radius: 0em;
+            border-top-left-radius: 0em;
+            margin-bottom: 15px;
+        }
+        section.subs .btn {
+            max-width: 300px;
+            height: 50px;
+            border-radius: 0;
+            border-bottom-right-radius: 0em;
+            border-top-right-radius: 0em;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('montserrat-v14-latin_cyrillic-900.woff2') format('woff2'),
+        url('montserrat-v14-latin_cyrillic-900.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('montserrat-v14-latin_cyrillic-700.woff2') format('woff2'),
+        url('montserrat-v14-latin_cyrillic-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('montserrat-v14-latin_cyrillic-500.woff2') format('woff2'),
+        url('montserrat-v14-latin_cyrillic-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'),
+        url('montserrat-v14-latin_cyrillic-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('montserrat-v14-latin_cyrillic-300.woff2') format('woff2'),
+        url('montserrat-v14-latin_cyrillic-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Thin';
+    src: url('montserrat-v14-latin_cyrillic-100.woff2') format('woff2'),
+        url('montserrat-v14-latin_cyrillic-100.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
