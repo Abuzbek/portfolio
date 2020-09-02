@@ -1,22 +1,30 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var lessMiddleware = require('less-middleware');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const lessMiddleware = require('less-middleware');
+const logger = require('morgan');
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://AbuzCoder:mannon_2710@cluster0.3qnw2.mongodb.net/user?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log('mongoDbga online ulandik')
+});
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
-var app = express();
-
+const indexRouter = require('./routes/index');
+const aboutRouter = require('./routes/about');
+const skillRouter = require('./routes/skill');
+const workRouter = require('./routes/work');
+const contactRouter = require('./routes/contact');
+const app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(lessMiddleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -24,7 +32,11 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', aboutRouter);
+app.use('/', skillRouter);
+app.use('/', workRouter);
+app.use('/', contactRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -12,7 +12,9 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "less-middleware": "~2.2.1",
+    "mdb-ui-kit": "^1.0.0",
     "mdbootstrap": "^4.19.1",
+    "mongoose": "^5.10.2",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11",
     "typed.js": "^2.0.11"

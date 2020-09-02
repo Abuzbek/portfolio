@@ -1,0 +1,94 @@
+extends layout
+
+block content
+  include navbar
+  section.contact.contact-section
+    .container-fluid 
+        .row
+            .col-md-12
+                .card.pb-5.contact_card
+                    .card-body.contact_card
+                        .container
+                            section.contact-section.my-5
+                                .card.elegant-color-dark
+                                    .row
+                                        .col-lg-8
+                                            form(action="/contact" method="POST")
+                                                .card-body.form
+                                                    h3.mt-4
+                                                        i.fas.fa-envelope.pr-2
+                                                        | Write to us:
+                                                    .row
+                                                        .col-md-6
+                                                            .md-form.mb-0
+                                                                input#form-contact-name.form-control(type='text', required name="name")
+                                                                label(for='form-contact-name') Your name
+                                                            // Grid column
+                                                            // Grid column
+                                                        .col-md-6
+                                                            .md-form.mb-0
+                                                                input#form-contact-email.form-control(type='text', required name="email")
+                                                                label(for='form-contact-email') Your email
+                                                            // Grid column
+                                                            // Grid row
+                                                            // Grid row
+                                                    .row
+                                                        // Grid column
+                                                        .col-md-6
+                                                            .md-form.mb-0
+                                                                input#form-contact-phone.form-control(type='text', required name="number")
+                                                                label(for='form-contact-phone') Your phone
+                                                            // Grid column
+                                                            // Grid column
+                                                        .col-md-6
+                                                            .md-form.mb-0
+                                                                input#form-contact-company.form-control(type='text', required name="company")
+                                                                label(for='form-contact-company') Your company
+                                                            // Grid column
+                                                            // Grid row
+                                                            // Grid row
+                                                    .row
+                                                        .col-md-12
+                                                            .md-form.mb-0
+                                                                textarea#form-contact-message.form-control.md-textarea(type='text', rows='3', required name="message")
+                                                                label(for='form-contact-message') Your message
+                                                                button(type="submit").btn-floating.btn-lg.blue.waves-effect.waves-light.white-text
+                                                                    i.far.fa-paper-plane
+                                                        // Grid column
+                                                        // Grid row
+                                                        // Grid column
+                                                        // Grid column
+                                        .col-lg-4
+                                            .card-body.contact.text-center.h-100.white-text.p-3.elegant-color
+                                                h3.my-4.pb-2 Contact information
+                                                ul.text-lg-left.list-unstyled.ml-4
+                                                    li
+                                                        p
+                                                            i.fas.fa-map-marker-alt.pr-2.mb-4
+                                                            a(href="https://www.google.com/maps?q=41.179085,69.223033&ll=41.179085,69.223033&z=16").white-text
+                                                                | Toshkent Sh, Birlik-19, Uzbekistan
+                                                    li
+                                                        p
+                                                            i.fas.fa-phone.pr-2.mb-4
+                                                            a(href="tel:+998990127427").white-text
+                                                                | + 998 99 012 74 27
+                                                    li
+                                                        p
+                                                            i.fas.fa-envelope.pr-2
+                                                            a(href="https://abuzCoder@gmail.com").white-text
+                                                                | AbuzCoder@gmail.com
+                                                hr.hr-light.my-4
+                                                ul.list-inline.text-center.list-unstyled
+                                                    li.list-inline-item
+                                                        a.p-2.fa-lg.tw-ic
+                                                            i.fab.fa-twitter
+                                                    li.list-inline-item
+                                                        a.p-2.fa-lg.li-ic
+                                                            i.fab.fa-linkedin-in  
+                                                    li.list-inline-item
+                                                        a.p-2.fa-lg.ins-ic
+                                                            i.fab.fa-instagram  
+                                            // Grid column
+                                            // Grid row
+                                            // Form with header
+                                                    // Section: Contact 

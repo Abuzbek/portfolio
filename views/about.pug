@@ -1,0 +1,88 @@
+extends layout
+
+block content
+  include navbar
+  section.about
+    .container-fluid.h-100
+        .row.h-100.about_row
+            .col-xl-6.col-lg-7.pl-100
+                .AbuzCoder.about_title
+                    .about_item.workesItemNext(style='border-bottom:1px solid #888787')
+                        h1
+                            span.blast Men
+                            span.blast Haqimda
+                        p
+                            | Salom mening ismim Abdumannon 2002-yil Toshkent shaxarida tug'ildim Web
+                            | Fullstack dasturchiman. Mobil dasturlash , Sun'iy ong ,Kiber hafsizlik va shunga
+                            | oxshash yana bir qator sohalarni o'rganib boryapman
+                        ul(style='margin-bottom: 30px !important;')
+                            li
+                                span.heading.AbuzCoder
+                                    i.AbuzCoder.fas.fa-user.icon_man
+                                    |  Tug'ilgan sana:
+                                span.date 2002 10 27
+                            li
+                                span.heading.AbuzCoder
+                                    i.AbuzCoder.fas.fa-language.icon_man
+                                    |  Tillar:
+                                span.date.AbuzCoder Uzbek , English
+                            li
+                                span.heading.AbuzCoder
+                                    i.AbuzCoder.fas.fa-football-ball.icon_man
+                                    |  Hobbilar
+                                    |                                                 :
+                                span.date.AbuzCoder
+                                    | Fudboll o'ynash,Koinot haqida kinolar
+                                    | ko'rish,CS:GO o'ynash va Qiziqarli projectla qilish
+                            li
+                                span.heading.AbuzCoder
+                                    i.AbuzCoder.fas.fa-link.icon_man
+                                    | Web sayt:
+                                span.date.AbuzCoder
+                                    a.text-white(href='#! ') www.AbuzCoder.com
+                        p.text-white
+                            | Agar ishlarimga qiziqish bildirsangiz va ish taklif qilmoqchi
+                            | bo'lsangiz hech o'ylab o'tirmay hoziroq bog'laning
+                        .buttons
+                            a.AbuzCoder.btn.btn-elegant.waves-effect.waves-light(href='tel:+998990127427')
+                                | MENGA
+                                | BOG'LANING
+                                i.fal.fa-link
+                            a.AbuzCoder.btn.btn-elegant.outline.waves-effect.waves-light(href='#!')
+                                | RESUMENI YUKLANG 
+                                i.fal.fa-download
+                    .pyramid_center.d-lg-none.d-block(style='overflow: hidden;width:100%;')
+                        #pyramid
+                            div
+                            div
+                            div
+                            div            
+                    .about_item(style='border-bottom:1px solid #888787 ; padding-top:25px;')
+                        h1.back.workesItemNext
+                            span.blast Qo'limdan
+                            span.blast Keladiganlar
+                        .col-12.workes
+                            .row
+                                .col-md-6
+                                    .workesItem
+                                        .icon
+                                            i.fal.fa-desktop-alt
+                                        .text
+                                            h3 Front-End Developer
+                                            p
+                                                | HTML , Css , LESS, SASS , Angular, GULP, JS , JQuery ,
+                                                | ReactJs
+                                .col-md-6
+                                    .workesItem
+                                        .icon
+                                            i.fal.fa-database
+                                        .text
+                                            h3 Back-End Developer
+                                            p NodeJs , ExpressJs , PHP , MongoDb , MySql
+            .col-xl-6.col-lg-5(style='overflow: hidden;')
+                #pyramid.d-none.d-lg-block
+                    div
+                    div
+                    div
+                    div
+            

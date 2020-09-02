@@ -1,38 +1,49 @@
-#myCanvasContainer
-  canvas#myCanvas(width='300', height='300')
-    p Anything in here will be replaced on browsers that support the canvas element
-#tags(style='font-size: 50%')
-  a(href='#', style='font-size: 2.83ex') 1000
-  a(href='#', style='font-size: 3.61ex') background
-  a(href='#', style='font-size: 9.64ex') canvas
-  a(href='#', style='font-size: 4.47ex') chart
-  a(href='#', style='font-size: 3.46ex') charts
-  a(href='#', style='font-size: 12.32ex') cloud
-  a(href='#', style='font-size: 3.74ex') clouds
-  a(href='#', style='font-size: 3.16ex') example
-  a(href='#', style='font-size: 3.74ex') goat
-  a(href='#', style='font-size: 3.16ex') goat1000
-  a(href='#', style='font-size: 8.36ex') graph
-  a(href='#', style='font-size: 4.36ex') graphs
-  a(href='#', style='font-size: 3.32ex') html
-  a(href='#', style='font-size: 10.68ex') html5
-  a(href='#', style='font-size: 4.69ex') image
-  a(href='#', style='font-size: 4.8ex') javascript
-  a(href='#', style='font-size: 5.47ex') jpeg
-  a(href='#', style='font-size: 2.65ex') jpegsaver
-  a(href='#', style='font-size: 8.77ex') jquery
-  a(href='#', style='font-size: 2.65ex') lib
-  a(href='#', style='font-size: 5.92ex') library
-  a(href='#', style='font-size: 3.32ex') link
-  a(href='#', style='font-size: 13.23ex') php
-  a(href='#', style='font-size: 2.83ex') plugin
-  a(href='#', style='font-size: 4.58ex') saver
-  a(href='#', style='font-size: 3.32ex') screensaver
-  a(href='#', style='font-size: 2.65ex') script
-  a(href='#', style='font-size: 13ex') svg
-  a(href='#', style='font-size: 4.47ex') svggraph
-  a(href='#', style='font-size: 12.44ex') tag
-  a(href='#', style='font-size: 2.65ex') tagcanvas
-  a(href='#', style='font-size: 3.46ex') tagcloud
-  a(href='#', style='font-size: 2.65ex') text
-  a(href='#', style='font-size: 3.16ex') word
+extends layout
+
+block content
+  include navbar
+  section.skill(style="overflow-x:hidden;")
+    #particles-js
+    .container-fluid.h-100
+      .row.h-100
+        .col-lg-6.pl-100.d-flex.align-items-center.justify-content-center
+         .card.card-image(style='background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);')
+          .text-white.d-flex.align-items-center.rgba-black-strong.py-5.px-4
+            div
+              h5.pink-text
+                i.fas.fa-chart-pie
+                |  Skills
+              h3.card-title.pt-2
+                strong.blast Skills & Experience
+              p
+                |  Men asosan web saytni Front qismida ishlashni yoqtiraman lekin web saytni server qismida ham anchagina tajribam bor
+                br
+                |Asosiy tajribam Javascript boyicha ya'ni uning freamworklari (Nodejs , Expressjs , ReactJs , Vuejs (boshlang'ich) , Angular (Boshlang'ich)) 
+              a(href="/work").btn.btn-pink
+                i.fas.fa-clone.left
+                |  View project
+
+        .col-lg-6.d-flex.justify-content-center.align-items-center(style="overflow:hidden;")
+          #myCanvasContainer
+            canvas#myCanvas(width='500', height='500')
+              p Anything in here will be replaced on browsers that support the canvas element
+          #tags(style='font-size: 50%')
+            a(href='#') HTML5
+            a(href='#') CSS3
+            a(href='#') JavaScript
+            a(href='#') NodeJs
+            a(href='#') ExpressJs
+            a(href='#' ) Pug
+            a(href='#') HBS
+            a(href='#') ReactJs
+            a(href='#') AngularJs
+            a(href='#') VueJs
+            a(href='#') Jquery
+            a(href='#') Sass
+            a(href='#') Less
+            a(href='#') Scss
+            a(href='#') GULP
+  div.rgba
+  script(src="./javascripts/tagCanvas.js")  
+  script(src="./javascripts/particles.min.js")
+  script(src="./javascripts/skillParticle.js")

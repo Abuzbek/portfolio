@@ -2,26 +2,74 @@ nav.navbar-left
     a.navbar_brand
         img(src="./images/logo.png", alt="")
     ul.nav-center.p-0
-        li
-            a(href="#!") 
-                i.fal.fa-home.white-text
-                span.white-text HOME
-        li
-            a(href="#!") 
-                i.fal.fa-user.white-text
-                span.white-text ABOUT
-        li
-            a(href="#!") 
-                i.fal.fa-cog.white-text
-                span.white-text SKILLS
-        li
-            a(href="#!") 
-                i.fal.fa-eye.white-text
-                span.white-text MY WORK
-        li
-            a(href="#!") 
-                i.fal.fa-envelope.white-text 
-                span.white-text CONTACT
+        //- ================ index.pug ================ 
+        if isIndex
+            li
+                a.active(href="/") 
+                    i.fal.fa-home.white-text
+                    span.white-text HOME
+        else
+            li
+                a(href="/") 
+                    i.fal.fa-home.white-text
+                    span.white-text HOME 
+        //- ================ index.pug ================ 
+
+        //- ================ about.pug ================ 
+
+        if isAbout
+            li
+                a.active(href="/about") 
+                    i.fal.fa-user.white-text
+                    span.white-text ABOUT
+        else
+            li
+                a(href="/about") 
+                    i.fal.fa-user.white-text
+                    span.white-text ABOUT    
+
+            //- ================ about.pug ================ 
+
+            //- ================ skill.pug ================ 
+
+        if isSkill
+            li
+                a.active(href="/skill") 
+                    i.fal.fa-cog.white-text
+                    span.white-text SKILLS
+        else 
+            li
+                a(href="/skill")
+                    i.fal.fa-cog.white-text    
+                    span.white-text SKILLS
+            //- ================ skill.pug ================ 
+            //- ================ work.pug ================ 
+
+        if isWork    
+            li
+                a.active(href="/work") 
+                    i.fal.fa-eye.white-text
+                    span.white-text MY WORK
+        else   
+            li
+                a(href="/work") 
+                    i.fal.fa-eye.white-text
+                    span.white-text MY WORK    
+            //- ================ work.pug ================ 
+            //- ================ contact.pug ================ 
+        if isContact
+            li
+                a.active(href="/contact") 
+                    i.fal.fa-envelope.white-text 
+                    span.white-text CONTACT
+        else
+            li
+                a(href="/contact") 
+                    i.fal.fa-envelope.white-text 
+                    span.white-text CONTACT
+
+            //- ================ contact.pug ================ 
+
     ul.nav-bottom.p-0
         li 
             a(href="#!") 
@@ -35,3 +83,26 @@ nav.navbar-left
             a(href="#!") 
                 i.fal.fa-mobile-android
                 span NUMBER
+    .menu_link
+        i.fas.fa-bars.white-text
+        ul.nav-menu-center
+            li
+                a(href="/") 
+                    i.fal.fa-home.white-text
+                    span.white-text HOME
+            li
+                a(href="/about") 
+                    i.fal.fa-user.white-text
+                    span.white-text ABOUT
+            li
+                a(href="/skill") 
+                    i.fal.fa-cog.white-text
+                    span.white-text SKILLS
+            li
+                a(href="/work") 
+                    i.fal.fa-eye.white-text
+                    span.white-text MY WORK
+            li
+                a(href="/contact") 
+                    i.fal.fa-envelope.white-text 
+                    span.white-text CONTACT
