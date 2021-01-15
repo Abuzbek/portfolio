@@ -1,10 +1,10 @@
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 400,
+      "value": 250,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1200
       }
     },
     "color": {
@@ -20,7 +20,7 @@ particlesJS('particles-js', {
         "nb_sides": 5
       },
       "image": {
-        "src": "../images/starburst_white_300_drop_2.png",
+        "src": "../images/snowflake3.png",
         "width": 50,
         "height": 50
       }

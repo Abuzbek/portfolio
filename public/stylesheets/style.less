@@ -283,7 +283,7 @@ section.about {
   position: relative;
   height: 100vh;
   z-index: 2;
-  background: url('https://images.wallpaperscraft.com/image/stars_sky_space_car_113629_1920x1080.jpg') no-repeat center center / cover;
+  background-color: #181818; 
 
   .about_item:first-child {
     background: rgba(64, 64, 64, 0.7);
@@ -418,7 +418,7 @@ section.about {
         border-radius: 1em;
         margin: 15px 0;
         padding: 10px 0;
-        cursor: pointer;
+        cursor: default;
 
       }
 
@@ -598,7 +598,7 @@ section.work {
 section.contact{
   height:100vh;
   position:relative;
-  background:url('https://images3.alphacoders.com/233/233237.jpg') no-repeat center center / cover;
+  background: #191919;
   &.contact-section .form .btn-floating {
     float: right;
     position: relative;
@@ -616,9 +616,10 @@ section.contact{
   .contact_card{
     background:transparent;
     border:none;
+    box-shadow: none !important;
   }
   .md-form{
-    label,input,i,{
+    label,input,i{
       color:white;
     }
   }
